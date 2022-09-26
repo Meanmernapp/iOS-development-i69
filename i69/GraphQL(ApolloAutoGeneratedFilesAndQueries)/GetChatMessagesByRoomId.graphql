@@ -1,0 +1,24 @@
+
+ query GetChatMessagesByRoomId($roomID: ID!, $last: Int!) {
+   messages(id: $roomID, last: $last) {
+     edges {
+       node {
+         id
+         content
+         timestamp
+         roomId {
+           id
+           name
+         }
+         userId {
+           id
+           username
+           avatarIndex
+           avatarPhotos {
+             url
+           }
+         }
+       }
+     }
+   }
+ }

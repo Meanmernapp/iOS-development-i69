@@ -1,0 +1,1 @@
+query users {user (id: "eecca2ef-109c-4baa-847d-f77f6e67b57f" ) {id, username, fullName, email, photosQuota}}

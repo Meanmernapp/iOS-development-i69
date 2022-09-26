@@ -1,0 +1,9 @@
+mutation BlockingUser($UserID:String!,$BlockUserID:String!) {
+  blockUser(id: $UserID, blockedId: $BlockUserID) {
+    id
+    username
+    success
+  }
+}
+
+

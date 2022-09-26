@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Medium.ttf">
+            <string>Inter-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GiftViewController" customModule="i69" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="zNj-P8-3dt" id="sVW-Da-U0p"/>
+                <outlet property="giftSendBtn" destination="Q9p-uh-BbU" id="YGF-Dh-8C5"/>
+                <outlet property="receiveBtn" destination="bEC-92-Tom" id="6uN-qn-G2Q"/>
+                <outlet property="receivedGiftView" destination="52O-Zh-pOV" id="dXC-5o-X0h"/>
+                <outlet property="sendBtn" destination="HJ2-DF-g5j" id="slW-Ks-40P"/>
+                <outlet property="sendGiftsView" destination="dqy-CT-65h" id="R4s-hR-0fO"/>
+                <outlet property="tableView" destination="GwY-hT-sOU" id="ehd-aG-TdK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="974-uw-YIC">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fut-7P-ViA">
+                    <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gifts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqt-Sm-nSB">
+                            <rect key="frame" x="184" y="18" width="46" height="24.5"/>
+                            <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="hqt-Sm-nSB" firstAttribute="centerX" secondItem="Fut-7P-ViA" secondAttribute="centerX" id="DUh-kh-cvK"/>
+                        <constraint firstAttribute="height" constant="60" id="Lc3-zI-ymc"/>
+                        <constraint firstItem="hqt-Sm-nSB" firstAttribute="centerY" secondItem="Fut-7P-ViA" secondAttribute="centerY" id="cav-iA-4UE"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3wu-E8-8zz">
+                    <rect key="frame" x="0.0" y="104" width="414" height="51"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="iyG-Zp-sy2">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="39"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEC-92-Tom">
+                                    <rect key="frame" x="0.0" y="0.0" width="197" height="39"/>
+                                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="16"/>
+                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="RECIVED GIFTS" image="gift"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="receiveAction:" destination="-1" eventType="touchUpInside" id="1pv-LA-Fhz"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJ2-DF-g5j">
+                                    <rect key="frame" x="217" y="0.0" width="197" height="39"/>
+                                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="16"/>
+                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="SEND GIFTS" image="gift"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="sendAction:" destination="-1" eventType="touchUpInside" id="fAj-u6-SEZ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vDP-Sw-W2t">
+                            <rect key="frame" x="0.0" y="49" width="414" height="2"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="52O-Zh-pOV">
+                                    <rect key="frame" x="0.0" y="0.0" width="197" height="2"/>
+                                    <color key="backgroundColor" name="golden_grad_end"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="2" id="ad4-UG-1xY"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqy-CT-65h">
+                                    <rect key="frame" x="217" y="0.0" width="197" height="2"/>
+                                    <color key="backgroundColor" name="golden_grad_end"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="2" id="pyr-TV-s9i"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.17254901960784313" green="0.18400000035762787" blue="0.19599999487400055" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="h84-91-dSt">
+                    <rect key="frame" x="0.0" y="155" width="414" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SENDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLC-Rb-er3">
+                            <rect key="frame" x="0.0" y="0.0" width="138" height="40"/>
+                            <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GIFT NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cm-Jr-Vss">
+                            <rect key="frame" x="138" y="0.0" width="138" height="40"/>
+                            <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COINS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r6y-dP-Cxv">
+                            <rect key="frame" x="276" y="0.0" width="138" height="40"/>
+                            <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="INY-gW-wrj"/>
+                    </constraints>
+                </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="GwY-hT-sOU">
+                    <rect key="frame" x="0.0" y="215" width="414" height="647"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="x1F-uI-kdN"/>
+                        <outlet property="delegate" destination="-1" id="pwL-Kp-NzZ"/>
+                    </connections>
+                </tableView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="zNj-P8-3dt">
+                    <rect key="frame" x="0.0" y="215" width="414" height="647"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dLy-Cl-KBa">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Mwz-hc-4q3"/>
+                        <outlet property="delegate" destination="-1" id="wyA-mu-Cws"/>
+                    </connections>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9p-uh-BbU" customClass="GradientButton" customModule="i69" customModuleProvider="target">
+                    <rect key="frame" x="117" y="622" width="180" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="0C5-si-aYo"/>
+                        <constraint firstAttribute="height" constant="40" id="Nuu-HT-dCi"/>
+                    </constraints>
+                    <color key="tintColor" name="golden"/>
+                    <state key="normal" title="SEND GIFT">
+                        <color key="titleColor" name="golden"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" name="golden"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="giftSendAction:" destination="-1" eventType="touchUpInside" id="uHc-TG-nVb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="GwY-hT-sOU" secondAttribute="bottom" id="1kJ-Ys-hIf"/>
+                <constraint firstItem="h84-91-dSt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4lZ-Fg-yMm"/>
+                <constraint firstItem="GwY-hT-sOU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6KD-ab-shw"/>
+                <constraint firstItem="GwY-hT-sOU" firstAttribute="top" secondItem="h84-91-dSt" secondAttribute="bottom" constant="20" id="6iD-9w-NEf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GwY-hT-sOU" secondAttribute="trailing" id="73U-Jr-CmO"/>
+                <constraint firstItem="974-uw-YIC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7TD-N2-BXe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="h84-91-dSt" secondAttribute="trailing" id="Epq-0T-2Q8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Q9p-uh-BbU" secondAttribute="bottom" constant="200" id="GfU-OG-hLm"/>
+                <constraint firstItem="Q9p-uh-BbU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IXl-sv-8YV"/>
+                <constraint firstItem="zNj-P8-3dt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Jzr-uA-auY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="974-uw-YIC" secondAttribute="trailing" id="PZb-S5-iUc"/>
+                <constraint firstItem="Fut-7P-ViA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="UTQ-7P-RZW"/>
+                <constraint firstItem="zNj-P8-3dt" firstAttribute="top" secondItem="h84-91-dSt" secondAttribute="bottom" constant="20" id="UfJ-eG-JQw"/>
+                <constraint firstItem="h84-91-dSt" firstAttribute="top" secondItem="3wu-E8-8zz" secondAttribute="bottom" id="XMb-VY-iBI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zNj-P8-3dt" secondAttribute="bottom" id="bDX-h5-rjl"/>
+                <constraint firstItem="Fut-7P-ViA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="g4D-Jv-YdY"/>
+                <constraint firstItem="3wu-E8-8zz" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="iPU-Xa-IwF"/>
+                <constraint firstItem="3wu-E8-8zz" firstAttribute="top" secondItem="Fut-7P-ViA" secondAttribute="bottom" id="ngN-3d-NdH"/>
+                <constraint firstItem="3wu-E8-8zz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tXf-eT-5iV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="974-uw-YIC" secondAttribute="bottom" id="tw0-YC-qCC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zNj-P8-3dt" secondAttribute="trailing" id="wdZ-Nn-ziZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Fut-7P-ViA" secondAttribute="trailing" id="xEF-Wc-86P"/>
+                <constraint firstItem="974-uw-YIC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zVh-I7-GTl"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="64"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gift" width="32" height="39"/>
+        <image name="login_background" width="856" height="1158"/>
+        <namedColor name="golden">
+            <color red="0.87099999189376831" green="0.7369999885559082" blue="0.3880000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="golden_grad_end">
+            <color red="1" green="0.87800002098083496" blue="0.53299999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

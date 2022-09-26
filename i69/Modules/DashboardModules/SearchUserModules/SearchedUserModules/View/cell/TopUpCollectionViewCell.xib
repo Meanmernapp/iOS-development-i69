@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Regular.ttf">
+            <string>Inter-Regular</string>
+        </array>
+        <array key="Inter-SemiBold.ttf">
+            <string>Inter-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TopUpCollectionViewCell" customModule="i69" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="164" height="235"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="164" height="235"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r3W-EP-PxT" customClass="GradienGoldentView" customModule="i69" customModuleProvider="target">
+                        <rect key="frame" x="10" y="10" width="144" height="215"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topup Coins" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97R-HH-qX7">
+                                <rect key="frame" x="23.5" y="112" width="97.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ygD-7E-2P2" customClass="GradientView" customModule="i69" customModuleProvider="target">
+                                <rect key="frame" x="26" y="10" width="92" height="92"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="header_logo" translatesAutoresizingMaskIntoConstraints="NO" id="CzC-Pw-cyD">
+                                        <rect key="frame" x="26" y="24.5" width="40" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="CzC-Pw-cyD" secondAttribute="height" multiplier="337:362" id="Iah-5c-WUT"/>
+                                            <constraint firstAttribute="width" constant="40" id="yZz-Fm-MJA"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ygD-7E-2P2" secondAttribute="height" multiplier="1:1" id="BVC-v3-7l1"/>
+                                    <constraint firstAttribute="height" constant="92" id="RXL-3H-eFa"/>
+                                    <constraint firstItem="CzC-Pw-cyD" firstAttribute="centerY" secondItem="ygD-7E-2P2" secondAttribute="centerY" id="dB4-3L-V7T"/>
+                                    <constraint firstItem="CzC-Pw-cyD" firstAttribute="centerX" secondItem="ygD-7E-2P2" secondAttribute="centerX" id="kZH-io-epk"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="41"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="golden"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4b-48-a9H">
+                                <rect key="frame" x="10" y="161" width="124" height="44"/>
+                                <string key="text">Buy i69 coins - open new
+world of connections!</string>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="O4b-48-a9H" firstAttribute="leading" secondItem="r3W-EP-PxT" secondAttribute="leading" constant="10" id="NaM-wi-M0F"/>
+                            <constraint firstAttribute="bottom" secondItem="O4b-48-a9H" secondAttribute="bottom" constant="10" id="O8Y-Li-kBG"/>
+                            <constraint firstItem="97R-HH-qX7" firstAttribute="top" secondItem="ygD-7E-2P2" secondAttribute="bottom" constant="10" id="ZfR-4b-ouD"/>
+                            <constraint firstItem="ygD-7E-2P2" firstAttribute="centerX" secondItem="r3W-EP-PxT" secondAttribute="centerX" id="ZkR-0y-ecB"/>
+                            <constraint firstItem="ygD-7E-2P2" firstAttribute="top" secondItem="r3W-EP-PxT" secondAttribute="top" constant="10" id="bLT-UG-CZa"/>
+                            <constraint firstItem="O4b-48-a9H" firstAttribute="centerX" secondItem="r3W-EP-PxT" secondAttribute="centerX" id="dp4-tQ-fyo"/>
+                            <constraint firstItem="97R-HH-qX7" firstAttribute="centerX" secondItem="r3W-EP-PxT" secondAttribute="centerX" id="pEH-23-8qi"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="r3W-EP-PxT" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="05n-8K-F8c"/>
+                <constraint firstItem="r3W-EP-PxT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="HMr-Cl-1eO"/>
+                <constraint firstItem="r3W-EP-PxT" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="TTf-Wv-DY6"/>
+                <constraint firstItem="r3W-EP-PxT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="qdE-Xx-cge"/>
+            </constraints>
+            <size key="customSize" width="164" height="235"/>
+            <point key="canvasLocation" x="220.28985507246378" y="163.72767857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="header_logo" width="33" height="31"/>
+        <namedColor name="golden">
+            <color red="0.87099999189376831" green="0.7369999885559082" blue="0.3880000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

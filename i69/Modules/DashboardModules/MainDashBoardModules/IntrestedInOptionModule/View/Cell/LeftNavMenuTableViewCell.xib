@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-SemiBold.ttf">
+            <string>Inter-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="KGk-i7-Jjw" customClass="LeftNavMenuTableViewCell" customModule="i69" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="iK0-Ej-dra">
+                        <rect key="frame" x="20" y="20" width="23" height="24"/>
+                        <color key="tintColor" name="golden"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="GJz-lV-Lbv"/>
+                            <constraint firstAttribute="width" secondItem="iK0-Ej-dra" secondAttribute="height" multiplier="30:31" id="JQa-7l-7Sn"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iob-C0-Ugj">
+                        <rect key="frame" x="53" y="12.5" width="42" height="19.5"/>
+                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="16"/>
+                        <color key="textColor" name="golden"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h2N-Em-Fkf">
+                        <rect key="frame" x="0.0" y="42" width="320" height="2"/>
+                        <color key="backgroundColor" name="toolbar_color"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="1Kx-4A-aAQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Iob-C0-Ugj" firstAttribute="leading" secondItem="iK0-Ej-dra" secondAttribute="trailing" constant="10" id="3rr-4o-SCx"/>
+                    <constraint firstItem="iK0-Ej-dra" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="9mf-LY-yKV"/>
+                    <constraint firstItem="iK0-Ej-dra" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="CfE-9b-jUG"/>
+                    <constraint firstItem="iK0-Ej-dra" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="RD9-Dz-BhP"/>
+                    <constraint firstItem="h2N-Em-Fkf" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="WGH-Jq-qPo"/>
+                    <constraint firstItem="h2N-Em-Fkf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="cZP-9Q-Bcq"/>
+                    <constraint firstAttribute="bottom" secondItem="h2N-Em-Fkf" secondAttribute="bottom" id="cwA-lq-J0a"/>
+                    <constraint firstItem="Iob-C0-Ugj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="skk-pG-3ea"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imImage" destination="iK0-Ej-dra" id="vgm-zU-Pk8"/>
+                <outlet property="lbTitle" destination="Iob-C0-Ugj" id="ovH-tH-rXa"/>
+                <outlet property="vLine" destination="h2N-Em-Fkf" id="ohl-a4-6qj"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="109.48660714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="search" width="30" height="31"/>
+        <namedColor name="golden">
+            <color red="0.87099999189376831" green="0.7369999885559082" blue="0.3880000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="toolbar_color">
+            <color red="0.1289999932050705" green="0.14100000262260437" blue="0.15299999713897705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

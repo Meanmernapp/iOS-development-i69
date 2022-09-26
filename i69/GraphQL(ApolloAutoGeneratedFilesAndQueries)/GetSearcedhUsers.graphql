@@ -1,0 +1,51 @@
+query GetSearcedhUsers(
+    $interestedIn: Int!, $limit: Int!,
+    $id: String!, $minHeight: Int!,
+    $maxHeight: Int!, $minAge: Int!,
+    $maxAge: Int!, $familyPlan: Int!,
+    $politics: Int!, $religious: Int!,
+    $zodiacSign: Int!,$searchKey : String!)
+    {
+        randomUsers (interestedIn: $interestedIn,
+            limit: $limit, id: $id,
+            minHeight: $minHeight,
+            maxHeight: $maxHeight,
+            minAge: $minAge, maxAge: $maxAge,
+            familyPlan: $familyPlan,
+            politics: $politics, religious: $religious,
+            zodiacSign: $zodiacSign, searchKey: $searchKey )
+            {
+                id, username, fullName, email,
+                photosQuota, avatarPhotos { id, url },
+                purchaseCoins, isOnline, gender, age,
+                height, about, avatarIndex,location,
+                familyPlans, religion, politics,
+                interestedIn, tags, sportsTeams,
+                books, education, zodiacSign, movies,
+                music, ethinicity, tvShows, work,
+                avatar { url },
+                likes { id, username, fullName,
+                avatarPhotos { id, url } },
+                blockedUsers { id, username, fullName, avatarPhotos { id, url } }
+                
+            },
+            popularUsers (interestedIn: $interestedIn,
+                    limit: $limit, id: $id, minHeight: $minHeight,
+                    maxHeight: $maxHeight, minAge: $minAge,
+                    maxAge: $maxAge, familyPlan: $familyPlan,
+                    politics: $politics, religious: $religious,
+                    zodiacSign: $zodiacSign , searchKey: $searchKey)
+                    {
+                        id, username, fullName, email, photosQuota,
+                        avatarPhotos { id, url }, purchaseCoins,
+                        isOnline, gender, age, height, about,
+                        avatarIndex,location, familyPlans, religion,
+                        politics, interestedIn, tags, sportsTeams,
+                        books, education, zodiacSign, movies, music,
+                        ethinicity, tvShows, work, avatar { url },
+                        likes { id, username, fullName, avatarPhotos { id, url } },
+                        blockedUsers { id, username, fullName, avatarPhotos { id, url } }
+                        
+                    }
+                        
+}

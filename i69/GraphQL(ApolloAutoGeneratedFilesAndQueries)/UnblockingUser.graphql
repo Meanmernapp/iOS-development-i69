@@ -1,0 +1,9 @@
+mutation UnBlockingUser($UserID:String!,$BlockUserID:String!) {
+  unblockUser(id: $UserID, blockedId: $BlockUserID) {
+    id
+    username
+    success
+  }
+}
+
+

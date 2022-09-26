@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserMomentsViewController" customModule="i69" customModuleProvider="target">
+            <connections>
+                <outlet property="imTest" destination="gDt-1H-JHN" id="gIC-mc-CKJ"/>
+                <outlet property="tbMoments" destination="EWW-nA-bOD" id="inE-Kf-CyP"/>
+                <outlet property="vHeader" destination="8cd-PB-o9I" id="Dnh-v6-9sF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8cd-PB-o9I">
+                    <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="7yb-vR-mN2"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="xHM-Da-sdg">
+                    <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EWW-nA-bOD">
+                    <rect key="frame" x="0.0" y="104" width="414" height="717"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gDt-1H-JHN">
+                    <rect key="frame" x="87" y="384" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="c5a-Mn-Qgl"/>
+                        <constraint firstAttribute="height" constant="128" id="dOM-0X-gXQ"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="xHM-Da-sdg" firstAttribute="top" secondItem="8cd-PB-o9I" secondAttribute="bottom" id="0J0-i0-rrk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xHM-Da-sdg" secondAttribute="bottom" id="1Xd-08-r5K"/>
+                <constraint firstItem="8cd-PB-o9I" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="36J-K1-Plp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xHM-Da-sdg" secondAttribute="trailing" id="4Nf-9J-hE3"/>
+                <constraint firstItem="EWW-nA-bOD" firstAttribute="top" secondItem="8cd-PB-o9I" secondAttribute="bottom" id="7WB-UE-7XD"/>
+                <constraint firstAttribute="bottom" secondItem="EWW-nA-bOD" secondAttribute="bottom" constant="75" id="81L-RR-7f2"/>
+                <constraint firstItem="xHM-Da-sdg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HUt-98-CqY"/>
+                <constraint firstItem="gDt-1H-JHN" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Iaw-tS-8oM"/>
+                <constraint firstItem="8cd-PB-o9I" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Smt-Lt-8Uj"/>
+                <constraint firstItem="gDt-1H-JHN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bBy-XX-c65"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EWW-nA-bOD" secondAttribute="trailing" id="qZS-uB-wKR"/>
+                <constraint firstItem="EWW-nA-bOD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="uSY-wf-QlI"/>
+                <constraint firstItem="8cd-PB-o9I" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="wqE-9F-Kfo"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="90.401785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_background" width="856" height="1158"/>
+    </resources>
+</document>

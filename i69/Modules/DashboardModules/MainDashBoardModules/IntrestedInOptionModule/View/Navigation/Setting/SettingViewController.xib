@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-SemiBold.ttf">
+            <string>Inter-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingViewController" customModule="i69" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="eli-9s-HuY" id="Z9Q-5n-CHE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z1J-Ew-7UM">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C6T-Af-URi">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SETTINGS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URI-jj-vpJ">
+                                    <rect key="frame" x="162" y="39" width="90" height="22"/>
+                                    <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="18"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKx-XU-8VK">
+                                    <rect key="frame" x="10" y="38" width="24" height="24"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" name="golden"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="delete"/>
+                                    <connections>
+                                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="KbQ-Mf-EJY"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" name="toolbar_color"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="BSn-9U-xL5"/>
+                                <constraint firstItem="GKx-XU-8VK" firstAttribute="leading" secondItem="C6T-Af-URi" secondAttribute="leading" constant="10" id="G1Z-wN-wDF"/>
+                                <constraint firstItem="GKx-XU-8VK" firstAttribute="centerY" secondItem="C6T-Af-URi" secondAttribute="centerY" id="bIT-5J-rrA"/>
+                                <constraint firstItem="URI-jj-vpJ" firstAttribute="centerX" secondItem="C6T-Af-URi" secondAttribute="centerX" id="pAk-Ez-LMm"/>
+                                <constraint firstItem="URI-jj-vpJ" firstAttribute="centerY" secondItem="C6T-Af-URi" secondAttribute="centerY" id="tkf-rg-4pe"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="eli-9s-HuY">
+                            <rect key="frame" x="0.0" y="100" width="414" height="752"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="ShM-EI-Ej3"/>
+                                <outlet property="delegate" destination="-1" id="dwV-Pk-Wxi"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" name="background_color"/>
+                    <constraints>
+                        <constraint firstItem="eli-9s-HuY" firstAttribute="leading" secondItem="Z1J-Ew-7UM" secondAttribute="leading" id="5Jo-mN-qVh"/>
+                        <constraint firstAttribute="trailing" secondItem="eli-9s-HuY" secondAttribute="trailing" id="BCq-Ff-gDR"/>
+                        <constraint firstAttribute="bottom" secondItem="eli-9s-HuY" secondAttribute="bottom" id="HZU-ad-6dP"/>
+                        <constraint firstItem="C6T-Af-URi" firstAttribute="top" secondItem="Z1J-Ew-7UM" secondAttribute="top" id="ja2-FS-oGY"/>
+                        <constraint firstAttribute="trailing" secondItem="C6T-Af-URi" secondAttribute="trailing" id="pf1-eD-4bw"/>
+                        <constraint firstItem="eli-9s-HuY" firstAttribute="top" secondItem="C6T-Af-URi" secondAttribute="bottom" id="skI-vY-C8C"/>
+                        <constraint firstItem="C6T-Af-URi" firstAttribute="leading" secondItem="Z1J-Ew-7UM" secondAttribute="leading" id="wxK-hU-pI2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Z1J-Ew-7UM" secondAttribute="bottom" id="FCa-zU-Bcf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Z1J-Ew-7UM" secondAttribute="trailing" id="FMb-hh-H6Y"/>
+                <constraint firstItem="Z1J-Ew-7UM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JtQ-yi-goC"/>
+                <constraint firstItem="Z1J-Ew-7UM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="UZh-ai-nzb"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete" width="24" height="24"/>
+        <namedColor name="background_color">
+            <color red="0.21600000560283661" green="0.22699999809265137" blue="0.24300000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="golden">
+            <color red="0.87099999189376831" green="0.7369999885559082" blue="0.3880000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="toolbar_color">
+            <color red="0.1289999932050705" green="0.14100000262260437" blue="0.15299999713897705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

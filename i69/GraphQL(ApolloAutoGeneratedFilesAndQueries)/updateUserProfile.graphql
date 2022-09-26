@@ -1,0 +1,16 @@
+mutation updateUserProfile($id : String!,$fullName : String!,$email : String!,$about : String!,$age : Int!,$gender: Int!,$height : Int!,$education : String!,$ethinicity : Int!,$familyPlans : Int!,$interestedIn : [Int]!,$music : [String]!,$sportsTeams : [String]!,$books : [String]!,$movies : [String]!,$religion : Int!,$politics : Int!,$tagIds : [Int]!,$work : String!,$zodiacSign : Int!)
+    {
+        updateProfile(id : $id,fullName : $fullName,
+            email : $email,about : $about,
+            age : $age,gender : $gender,
+            height : $height,education : $education,
+            ethinicity : $ethinicity, familyPlans : $familyPlans,
+            interestedIn : $interestedIn, music : $music,
+            sportsTeams : $sportsTeams,
+            book : $books, movies : $movies,
+            religion : $religion , politics : $politics,
+            tagIds : $tagIds , work : $work , zodiacSign : $zodiacSign)
+        {
+            id
+        }
+    }

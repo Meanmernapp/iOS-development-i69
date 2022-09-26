@@ -1,0 +1,62 @@
+query GetReceivedGifts( $receiver_Id: UUID!) {
+   allUserGifts (receiver_Id: $receiver_Id)
+   {
+       edges {
+           cursor
+           node {
+               user {
+                   id
+                   fullName
+                   username
+                   avatar {
+                       url
+                   }
+               }
+               id
+               pk
+               gift {
+                   id
+                   type
+                   cost
+                   picture
+                   url
+                   giftName
+
+                   giftForGiftpurchase
+                   {
+                       edges {
+                            node {
+                                id
+                                gift {
+                                    id
+                                    cost
+                                    type
+                                    giftName
+                                    picture
+                                    url
+                                }
+                            }
+                       }
+                   }
+
+
+               }
+               purchasedOn
+               receiver {
+                   id
+                   fullName
+                   gender
+                   avatar {
+                       url
+                   }
+                   avatarPhotos {
+                       url
+                       id
+                   }
+               }
+           }
+       }
+   }
+}
+
+

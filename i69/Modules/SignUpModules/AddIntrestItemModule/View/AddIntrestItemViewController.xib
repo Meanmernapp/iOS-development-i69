@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Regular.ttf">
+            <string>Inter-Regular</string>
+        </array>
+        <array key="Inter-SemiBold.ttf">
+            <string>Inter-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddIntrestItemViewController" customModule="i69" customModuleProvider="target">
+            <connections>
+                <outlet property="lbSubtitle" destination="rzQ-NM-l1Z" id="ANE-EF-ERv"/>
+                <outlet property="lbTitle" destination="CxP-um-ITg" id="D8R-db-oJv"/>
+                <outlet property="tfField" destination="msr-Pa-gev" id="OC3-6W-r24"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XEY-hI-iYW">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WDq-nL-TZu" userLabel="Toolbar">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EDIT PROFILE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CxP-um-ITg">
+                                    <rect key="frame" x="147.5" y="19" width="119.5" height="22"/>
+                                    <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="18"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhC-gL-ocL">
+                                    <rect key="frame" x="328" y="13.5" width="66" height="33.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" name="golden"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="SAVE">
+                                        <fontDescription key="titleFontDescription" name="Inter-SemiBold" family="Inter" pointSize="16"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="btnSaveAction:" destination="-1" eventType="touchUpInside" id="wKc-Co-AIZ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1D-uk-V05">
+                                    <rect key="frame" x="20" y="12" width="38" height="36"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="36" id="HdE-HZ-9Xf"/>
+                                        <constraint firstAttribute="width" secondItem="c1D-uk-V05" secondAttribute="height" multiplier="19:18" id="cSU-kL-2e0"/>
+                                        <constraint firstAttribute="width" constant="38" id="zW5-Hx-OAu"/>
+                                    </constraints>
+                                    <color key="tintColor" name="golden"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="back"/>
+                                    <connections>
+                                        <action selector="btnBackAction:" destination="-1" eventType="touchUpInside" id="SN9-mK-WdS"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" name="toolbar_color"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="hhC-gL-ocL" secondAttribute="trailing" constant="20" id="21g-DV-unQ"/>
+                                <constraint firstItem="CxP-um-ITg" firstAttribute="centerY" secondItem="WDq-nL-TZu" secondAttribute="centerY" id="JOd-bR-2iS"/>
+                                <constraint firstItem="hhC-gL-ocL" firstAttribute="centerY" secondItem="WDq-nL-TZu" secondAttribute="centerY" id="KcN-v0-Dub"/>
+                                <constraint firstItem="CxP-um-ITg" firstAttribute="centerX" secondItem="WDq-nL-TZu" secondAttribute="centerX" id="QYU-pF-Ong"/>
+                                <constraint firstItem="c1D-uk-V05" firstAttribute="centerY" secondItem="WDq-nL-TZu" secondAttribute="centerY" id="Z6j-mU-IY3"/>
+                                <constraint firstItem="c1D-uk-V05" firstAttribute="leading" secondItem="WDq-nL-TZu" secondAttribute="leading" constant="20" id="mJW-Ry-fME"/>
+                                <constraint firstAttribute="height" constant="60" id="w53-cy-in5"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzQ-NM-l1Z">
+                            <rect key="frame" x="20" y="80" width="47.5" height="22"/>
+                            <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="18"/>
+                            <color key="textColor" name="golden"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="msr-Pa-gev">
+                            <rect key="frame" x="20" y="122" width="374" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="HIg-OA-HCd"/>
+                            </constraints>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="18"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9gM-Fr-Jmb">
+                            <rect key="frame" x="20" y="172" width="374" height="1"/>
+                            <color key="backgroundColor" systemColor="systemGray4Color"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="77m-eV-PPb"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBm-JE-AiS" customClass="GradientButton" customModule="i69" customModuleProvider="target">
+                            <rect key="frame" x="20" y="192" width="374" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="o18-Dd-GJN"/>
+                            </constraints>
+                            <color key="tintColor" name="golden"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="SAVE">
+                                <fontDescription key="titleFontDescription" name="Inter-SemiBold" family="Inter" pointSize="16"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="golden_grad_start"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnSaveAction:" destination="-1" eventType="touchUpInside" id="Ftf-jX-0X9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="background_color"/>
+                    <constraints>
+                        <constraint firstItem="WDq-nL-TZu" firstAttribute="leading" secondItem="XEY-hI-iYW" secondAttribute="leading" id="0Dp-h2-Xdj"/>
+                        <constraint firstItem="rzQ-NM-l1Z" firstAttribute="leading" secondItem="c1D-uk-V05" secondAttribute="leading" id="BwU-uM-OfG"/>
+                        <constraint firstItem="msr-Pa-gev" firstAttribute="leading" secondItem="rzQ-NM-l1Z" secondAttribute="leading" id="H0E-Cz-AdU"/>
+                        <constraint firstItem="rzQ-NM-l1Z" firstAttribute="top" secondItem="WDq-nL-TZu" secondAttribute="bottom" constant="20" id="Igb-et-Bvu"/>
+                        <constraint firstItem="lBm-JE-AiS" firstAttribute="leading" secondItem="msr-Pa-gev" secondAttribute="leading" id="Mc8-GN-MLa"/>
+                        <constraint firstItem="9gM-Fr-Jmb" firstAttribute="top" secondItem="msr-Pa-gev" secondAttribute="bottom" id="Nc5-BG-QPb"/>
+                        <constraint firstItem="msr-Pa-gev" firstAttribute="top" secondItem="rzQ-NM-l1Z" secondAttribute="bottom" constant="20" id="Nt0-Gh-Jah"/>
+                        <constraint firstItem="9gM-Fr-Jmb" firstAttribute="leading" secondItem="rzQ-NM-l1Z" secondAttribute="leading" id="PJa-no-w0J"/>
+                        <constraint firstItem="9gM-Fr-Jmb" firstAttribute="centerX" secondItem="XEY-hI-iYW" secondAttribute="centerX" id="Qon-Ow-H8x"/>
+                        <constraint firstAttribute="trailing" secondItem="WDq-nL-TZu" secondAttribute="trailing" id="TBJ-Bd-pdJ"/>
+                        <constraint firstItem="lBm-JE-AiS" firstAttribute="top" secondItem="msr-Pa-gev" secondAttribute="bottom" constant="20" id="W9N-qv-X45"/>
+                        <constraint firstItem="lBm-JE-AiS" firstAttribute="centerX" secondItem="XEY-hI-iYW" secondAttribute="centerX" id="ey4-12-gj8"/>
+                        <constraint firstItem="msr-Pa-gev" firstAttribute="centerX" secondItem="XEY-hI-iYW" secondAttribute="centerX" id="udz-YL-XgF"/>
+                        <constraint firstItem="WDq-nL-TZu" firstAttribute="top" secondItem="XEY-hI-iYW" secondAttribute="top" id="vFb-y2-LuI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="XEY-hI-iYW" secondAttribute="bottom" id="L3Q-ww-oAB"/>
+                <constraint firstItem="XEY-hI-iYW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="TLG-Qn-O11"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XEY-hI-iYW" secondAttribute="trailing" id="U3J-OU-hWr"/>
+                <constraint firstItem="XEY-hI-iYW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="daz-XY-sCu"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="105.80357142857143"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="14" height="22"/>
+        <namedColor name="background_color">
+            <color red="0.21600000560283661" green="0.22699999809265137" blue="0.24300000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="golden">
+            <color red="0.87099999189376831" green="0.7369999885559082" blue="0.3880000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="golden_grad_start">
+            <color red="0.70599997043609619" green="0.55699998140335083" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="toolbar_color">
+            <color red="0.1289999932050705" green="0.14100000262260437" blue="0.15299999713897705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

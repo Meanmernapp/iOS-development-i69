@@ -1,0 +1,1 @@
+mutation loginUser($accessToken: String!, $accessVerifier: String!, $provider: String!) {socialAuth (accessToken: $accessToken, accessVerifier: $accessVerifier, provider: $provider) {id, email, token, isNew, username}}

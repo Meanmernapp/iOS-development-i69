@@ -1,0 +1,9 @@
+query AllGifts{
+  allGift{
+        id
+        giftName
+    cost
+    type
+    url
+    }
+}

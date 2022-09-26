@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="152" id="KGk-i7-Jjw" customClass="StoriesTableViewCell" customModule="i69" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="152"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="152"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rhg-1R-fjA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="193"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bAj-G8-3vC">
+                                <rect key="frame" x="5" y="5" width="310" height="183"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="S5Y-ZR-Ej9">
+                                    <size key="itemSize" width="118" height="143"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" name="moments_background"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="bAj-G8-3vC" secondAttribute="bottom" constant="5" id="9yA-85-7xa"/>
+                            <constraint firstAttribute="height" constant="193" id="A5X-l3-EKg"/>
+                            <constraint firstAttribute="trailing" secondItem="bAj-G8-3vC" secondAttribute="trailing" constant="5" id="M2o-z0-Ble"/>
+                            <constraint firstItem="bAj-G8-3vC" firstAttribute="leading" secondItem="Rhg-1R-fjA" secondAttribute="leading" constant="5" id="dfN-gt-Rw4"/>
+                            <constraint firstItem="bAj-G8-3vC" firstAttribute="top" secondItem="Rhg-1R-fjA" secondAttribute="top" constant="5" id="lxq-IT-dBQ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Rhg-1R-fjA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Cnf-G7-MwT"/>
+                    <constraint firstAttribute="bottom" secondItem="Rhg-1R-fjA" secondAttribute="bottom" constant="10" id="FtI-5u-a6q"/>
+                    <constraint firstAttribute="trailing" secondItem="Rhg-1R-fjA" secondAttribute="trailing" id="HLu-gH-89K"/>
+                    <constraint firstItem="Rhg-1R-fjA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gtH-E4-Bid"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="cvStories" destination="bAj-G8-3vC" id="RG3-FM-Uz2"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="141.29464285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="moments_background">
+            <color red="0.12200000137090683" green="0.14100000262260437" blue="0.18799999356269836" alpha="0.80000001192092896" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

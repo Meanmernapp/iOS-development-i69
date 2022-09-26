@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-SemiBold.ttf">
+            <string>Inter-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="96" id="KGk-i7-Jjw" customClass="BlockedTableViewCell" customModule="i69" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="356" height="96"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xah-aJ-Ckh">
+                        <rect key="frame" x="10" y="0.0" width="336" height="60"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sP9-fg-vNr">
+                                <rect key="frame" x="20" y="5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Rse-Dn-bIW"/>
+                                    <constraint firstAttribute="width" constant="50" id="onv-8Z-hR6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="L0u-DB-aJM">
+                                <rect key="frame" x="85" y="8" width="76" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWM-hr-smG">
+                                        <rect key="frame" x="0.0" y="0.0" width="76" height="24.5"/>
+                                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLOCKED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNM-Ec-Kj0">
+                                        <rect key="frame" x="0.0" y="24.5" width="76" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="16"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkx-Tk-iu8">
+                                <rect key="frame" x="248" y="13" width="88" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="18"/>
+                                <color key="tintColor" name="golden"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="UNBLOCK"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="L0u-DB-aJM" firstAttribute="centerY" secondItem="sP9-fg-vNr" secondAttribute="centerY" id="0Pl-JR-VbO"/>
+                            <constraint firstItem="sP9-fg-vNr" firstAttribute="centerY" secondItem="Xah-aJ-Ckh" secondAttribute="centerY" id="0zl-4v-K30"/>
+                            <constraint firstItem="nkx-Tk-iu8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="L0u-DB-aJM" secondAttribute="trailing" id="4wg-gv-4Gl"/>
+                            <constraint firstAttribute="bottom" secondItem="sP9-fg-vNr" secondAttribute="bottom" constant="5" id="5n5-8Y-07w"/>
+                            <constraint firstItem="nkx-Tk-iu8" firstAttribute="centerY" secondItem="L0u-DB-aJM" secondAttribute="centerY" id="KAL-ap-PeI"/>
+                            <constraint firstItem="sP9-fg-vNr" firstAttribute="top" secondItem="Xah-aJ-Ckh" secondAttribute="top" constant="5" id="nUH-du-1ic"/>
+                            <constraint firstItem="L0u-DB-aJM" firstAttribute="leading" secondItem="sP9-fg-vNr" secondAttribute="trailing" constant="15" id="ppF-gj-HDd"/>
+                            <constraint firstAttribute="trailing" secondItem="nkx-Tk-iu8" secondAttribute="trailing" id="qLM-TY-xrS"/>
+                            <constraint firstItem="sP9-fg-vNr" firstAttribute="leading" secondItem="Xah-aJ-Ckh" secondAttribute="leading" constant="20" id="xmb-ZD-GCQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Xah-aJ-Ckh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HJG-V3-Ja8"/>
+                    <constraint firstAttribute="trailing" secondItem="Xah-aJ-Ckh" secondAttribute="trailing" constant="10" id="UXS-wz-IfT"/>
+                    <constraint firstAttribute="bottom" secondItem="Xah-aJ-Ckh" secondAttribute="bottom" constant="20" id="e5E-Zf-Sd0"/>
+                    <constraint firstItem="Xah-aJ-Ckh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="fRJ-fd-RJV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="nameLbl" destination="xWM-hr-smG" id="bDO-G7-nHX"/>
+                <outlet property="unblockButton" destination="nkx-Tk-iu8" id="pZw-sS-x8h"/>
+                <outlet property="userImg" destination="sP9-fg-vNr" id="idc-Hh-ZX3"/>
+            </connections>
+            <point key="canvasLocation" x="163.768115942029" y="131.25"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="golden">
+            <color red="0.87099999189376831" green="0.7369999885559082" blue="0.3880000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

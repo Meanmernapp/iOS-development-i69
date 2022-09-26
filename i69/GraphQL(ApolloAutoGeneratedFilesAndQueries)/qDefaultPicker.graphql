@@ -1,0 +1,1 @@
+query pickers {defaultPicker { agePicker { id, value, valueFr }, ethnicityPicker { id, value, valueFr }, familyPicker { id, value, valueFr }, heightsPicker { id, value, valueFr }, politicsPicker { id, value, valueFr }, religiousPicker { id, value, valueFr }, tagsPicker { id, value, valueFr }, zodiacSignPicker { id, value, valueFr } }}

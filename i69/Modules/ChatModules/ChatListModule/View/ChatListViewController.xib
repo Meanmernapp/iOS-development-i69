@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatListViewController" customModule="i69" customModuleProvider="target">
+            <connections>
+                <outlet property="tbChat" destination="XET-7A-ydW" id="SC6-NH-YC1"/>
+                <outlet property="vHeader" destination="8YU-qD-AP2" id="6lW-pX-QAx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="4GH-lC-jdX">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iF8-Cy-8ud">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8YU-qD-AP2">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                            <color key="backgroundColor" name="toolbar_color"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="yLP-9n-riV"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XET-7A-ydW">
+                            <rect key="frame" x="0.0" y="60" width="414" height="792"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="XET-7A-ydW" firstAttribute="leading" secondItem="iF8-Cy-8ud" secondAttribute="leading" id="0DO-bi-eIS"/>
+                        <constraint firstAttribute="trailing" secondItem="XET-7A-ydW" secondAttribute="trailing" id="2jY-zz-GE1"/>
+                        <constraint firstAttribute="bottom" secondItem="XET-7A-ydW" secondAttribute="bottom" id="LaH-cF-rtp"/>
+                        <constraint firstItem="XET-7A-ydW" firstAttribute="top" secondItem="8YU-qD-AP2" secondAttribute="bottom" id="Npf-Ip-KcB"/>
+                        <constraint firstAttribute="trailing" secondItem="8YU-qD-AP2" secondAttribute="trailing" id="Wln-s6-V6n"/>
+                        <constraint firstItem="8YU-qD-AP2" firstAttribute="top" secondItem="iF8-Cy-8ud" secondAttribute="top" id="dEK-PK-JvN"/>
+                        <constraint firstItem="8YU-qD-AP2" firstAttribute="leading" secondItem="iF8-Cy-8ud" secondAttribute="leading" id="ljW-96-5ta"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="background_color"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4GH-lC-jdX" secondAttribute="trailing" id="9br-jp-wuN"/>
+                <constraint firstItem="iF8-Cy-8ud" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="DHr-Zy-4hA"/>
+                <constraint firstItem="4GH-lC-jdX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="UO5-6d-Jya"/>
+                <constraint firstItem="4GH-lC-jdX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hi1-Ug-kIn"/>
+                <constraint firstAttribute="bottom" secondItem="4GH-lC-jdX" secondAttribute="bottom" id="pGA-9G-v1Y"/>
+                <constraint firstItem="iF8-Cy-8ud" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="q0X-N2-lfN"/>
+                <constraint firstAttribute="bottom" secondItem="iF8-Cy-8ud" secondAttribute="bottom" id="ruI-xS-7dg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iF8-Cy-8ud" secondAttribute="trailing" id="z3j-Ew-MSV"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="83.705357142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_background" width="856" height="1158"/>
+        <namedColor name="background_color">
+            <color red="0.21600000560283661" green="0.22699999809265137" blue="0.24300000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="toolbar_color">
+            <color red="0.1289999932050705" green="0.14100000262260437" blue="0.15299999713897705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

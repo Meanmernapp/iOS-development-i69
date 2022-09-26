@@ -1,0 +1,12 @@
+query getUserProfileById($id : String!)
+    {
+        user (id: $id )
+        {
+            id, username, fullName, email, photosQuota, avatarPhotos { id, url }, purchaseCoins, isOnline, gender, age, height, about, location, familyPlans, religion, politics, interestedIn, tags, sportsTeams, books, education, zodiacSign, movies, music, ethinicity, tvShows, work, likes
+                {
+                    id, username, fullName, avatarPhotos { id, url }
+                    
+                }, blockedUsers
+                    { id, username, fullName, avatarPhotos { id, url } }
+        }
+    }

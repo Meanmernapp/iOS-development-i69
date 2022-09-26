@@ -1,0 +1,52 @@
+
+ query GetAllRooms($first: Int!) {
+   rooms(first: $first) {
+     pageInfo {
+       hasNextPage
+       hasPreviousPage
+       startCursor
+       endCursor
+     }
+     edges {
+       node {
+         id
+         name
+         lastModified
+         unread
+         messageSet(first: 1) {
+           edges {
+             node {
+               content
+               id
+               roomId {
+                 id
+               }
+               timestamp
+               read
+             }
+           }
+         }
+         userId {
+           username
+           fullName
+           id
+           isOnline
+           avatar {
+             url
+           }
+           gender
+         }
+         target {
+           username
+           fullName
+           id
+           isOnline
+           avatar {
+             url
+           }
+           gender
+         }
+       }
+     }
+   }
+ }

@@ -1,0 +1,18 @@
+mutation GiftPurchase ($gid: ID!, $uId: ID!) {
+    giftPurchase (giftId: $gid, receiverId: $uId) {
+        giftPurchase {
+            gift {
+                giftName
+                cost
+            }
+            user {
+                id
+                username
+                email
+                coins
+                purchaseCoins
+
+            }
+        }
+    }
+}

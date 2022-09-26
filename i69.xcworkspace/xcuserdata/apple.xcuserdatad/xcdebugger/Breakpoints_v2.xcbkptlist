@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "254DE0D6-9B17-48A5-AA20-E0C57C527CF8"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0BC7C31D-59C5-480A-AF04-4C6CF908C5DB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "i69/Modules/SignUpModules/CompleteProfileModule/CompleteProfileViewInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "completeProfile(photos:id:fullName:email:about:age:gender:height:education:ethinicity:familyPlans:interestedIn:music:sportsTeams:books:movies:religion:politics:tagIds:tvShows:work:zodiacSign:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

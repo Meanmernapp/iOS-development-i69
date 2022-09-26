@@ -1,0 +1,98 @@
+query GetAllUserStories($first: Int!, $after: String!, $pk: String!) {
+   allUserStories(after: $after, first: $first, pk: $pk) {
+     edges {
+     
+       cursor
+       node {
+         createdDate
+         file
+         fileType
+         id
+         pk
+         thumbnail
+         commentsCount
+         comments {
+           pageInfo {
+             endCursor
+             hasNextPage
+             hasPreviousPage
+             startCursor
+           }
+           edges {
+             cursor
+             node {
+               id
+               pk
+               createdDate
+               commentDescription
+               objectId
+               pk
+               user {
+                 id
+                 fullName
+                 avatarIndex
+                 avatarPhotos {
+                   url
+                   id
+                 }
+                 avatar {
+                   id
+                   url
+                 }
+               }
+             }
+           }
+         }
+         likesCount
+         likes {
+           pageInfo {
+             endCursor
+             hasNextPage
+             hasPreviousPage
+             startCursor
+           }
+           edges {
+             cursor
+             node {
+               id
+               pk
+               objectId
+               user {
+                 id
+                 fullName
+                 avatarIndex
+                 avatarPhotos {
+                   url
+                   id
+                 }
+                 avatar {
+                   id
+                   url
+                 }
+               }
+             }
+           }
+         }
+         user {
+           id
+           fullName
+           avatar {
+             url
+             id
+           }
+           avatarIndex
+           avatarPhotos {
+             url
+             id
+           }
+         }
+       }
+     }
+     pageInfo {
+       endCursor
+       hasNextPage
+       hasPreviousPage
+       startCursor
+     }
+   }
+ }

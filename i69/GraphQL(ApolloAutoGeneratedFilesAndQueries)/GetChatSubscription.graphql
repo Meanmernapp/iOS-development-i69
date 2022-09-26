@@ -1,0 +1,23 @@
+subscription GetNewMessages($token: String!) {
+    onNewMessage(token: $token) {
+        message {
+            id
+            roomId {
+                id
+                name
+            }
+            userId {
+                id
+                fullName
+                username
+                avatarIndex
+                avatarPhotos {
+                    url
+                }
+            }
+            content
+            timestamp
+            read
+        }
+    }
+      }

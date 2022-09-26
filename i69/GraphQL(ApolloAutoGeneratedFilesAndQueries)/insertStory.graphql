@@ -1,0 +1,10 @@
+
+ mutation story($file: Upload!) {
+   insertStory(file: $file) {
+     story {
+       file
+       createdDate
+       id
+     }
+   }
+ }

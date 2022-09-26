@@ -1,0 +1,14 @@
+mutation CreateChatMutation($username: String!) {
+  createChat(userName: $username) {
+    room {
+      id
+      name
+      userId {
+        username
+      }
+      target {
+        username
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+
+
+mutation PurchaseCoins($userID:String!,$method:String,$coins:Int,$money:Float!) {
+  purchaseCoin(id: $userID, method: $method, coins: $coins, money: $money) {
+          id
+      coins
+      success
+      }
+}
+

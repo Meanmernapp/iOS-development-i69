@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-SemiBold.ttf">
+            <string>Inter-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="206" id="KGk-i7-Jjw" customClass="IntrestedOptionTableViewCell" customModule="i69" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="206"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="206"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NvY-qk-cLd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="206"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SERIOUS RElationship" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3C-Q6-zzc">
+                                <rect key="frame" x="64.5" y="25" width="191" height="9"/>
+                                <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="18"/>
+                                <color key="textColor" name="golden"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMB-dF-Fnf">
+                                <rect key="frame" x="0.0" y="54" width="160" height="92"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seb-VG-pE0">
+                                        <rect key="frame" x="34" y="0.0" width="92" height="92"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="seb-VG-pE0" secondAttribute="height" multiplier="1:1" id="ghe-eF-P09"/>
+                                        </constraints>
+                                        <color key="tintColor" name="golden"/>
+                                        <inset key="contentEdgeInsets" minX="1" minY="20" maxX="0.0" maxY="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="40" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="men"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="46"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="golden"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnManAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aU1-lP-wST"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="seb-VG-pE0" firstAttribute="top" secondItem="TMB-dF-Fnf" secondAttribute="top" id="Yvv-sC-swg"/>
+                                    <constraint firstItem="seb-VG-pE0" firstAttribute="centerX" secondItem="TMB-dF-Fnf" secondAttribute="centerX" id="p56-uy-iXS"/>
+                                    <constraint firstItem="seb-VG-pE0" firstAttribute="centerY" secondItem="TMB-dF-Fnf" secondAttribute="centerY" id="shT-4S-nhY"/>
+                                    <constraint firstAttribute="height" constant="92" id="yuK-ga-di4"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nud-Xd-gfe">
+                                <rect key="frame" x="160" y="54" width="160" height="92"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3lz-AB-ucp">
+                                        <rect key="frame" x="34" y="0.0" width="92" height="92"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="3lz-AB-ucp" secondAttribute="height" multiplier="1:1" id="HeT-3I-jsc"/>
+                                        </constraints>
+                                        <color key="tintColor" name="golden"/>
+                                        <inset key="contentEdgeInsets" minX="1" minY="20" maxX="0.0" maxY="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="40" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="women"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="46"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="golden"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnWomanAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ujO-Hl-t0c"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="3lz-AB-ucp" firstAttribute="centerX" secondItem="Nud-Xd-gfe" secondAttribute="centerX" id="MlZ-AQ-Yaz"/>
+                                    <constraint firstItem="3lz-AB-ucp" firstAttribute="centerY" secondItem="Nud-Xd-gfe" secondAttribute="centerY" id="Vva-jR-J1w"/>
+                                    <constraint firstItem="3lz-AB-ucp" firstAttribute="top" secondItem="Nud-Xd-gfe" secondAttribute="top" id="x0N-Rs-XQb"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZcD-Dz-98f">
+                                <rect key="frame" x="58.5" y="156" width="43" height="22"/>
+                                <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="18"/>
+                                <color key="textColor" name="golden"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WOMAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gsu-Od-vUJ">
+                                <rect key="frame" x="203" y="156" width="74.5" height="22"/>
+                                <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="18"/>
+                                <color key="textColor" name="golden"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqT-iD-FDP">
+                                <rect key="frame" x="50" y="205" width="220" height="1"/>
+                                <color key="backgroundColor" name="golden"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Qzn-Hp-Vzw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="TMB-dF-Fnf" secondAttribute="bottom" constant="60" id="37K-SF-mMx"/>
+                            <constraint firstItem="hqT-iD-FDP" firstAttribute="leading" secondItem="NvY-qk-cLd" secondAttribute="leading" constant="50" id="4hl-IF-JOH"/>
+                            <constraint firstItem="Nud-Xd-gfe" firstAttribute="top" secondItem="TMB-dF-Fnf" secondAttribute="top" id="8zc-im-wnE"/>
+                            <constraint firstAttribute="bottom" secondItem="hqT-iD-FDP" secondAttribute="bottom" id="JfR-j6-9fd"/>
+                            <constraint firstItem="Nud-Xd-gfe" firstAttribute="bottom" secondItem="TMB-dF-Fnf" secondAttribute="bottom" id="LHt-Dd-0Nn"/>
+                            <constraint firstItem="TMB-dF-Fnf" firstAttribute="top" secondItem="Q3C-Q6-zzc" secondAttribute="bottom" constant="20" id="P15-pL-sHg"/>
+                            <constraint firstItem="ZcD-Dz-98f" firstAttribute="top" secondItem="TMB-dF-Fnf" secondAttribute="bottom" constant="10" id="R9M-fy-VRY"/>
+                            <constraint firstItem="ZcD-Dz-98f" firstAttribute="centerY" secondItem="Gsu-Od-vUJ" secondAttribute="centerY" id="Unr-1m-reO"/>
+                            <constraint firstItem="Q3C-Q6-zzc" firstAttribute="top" secondItem="NvY-qk-cLd" secondAttribute="top" constant="25" id="Vbh-Q2-q4O"/>
+                            <constraint firstAttribute="trailing" secondItem="Nud-Xd-gfe" secondAttribute="trailing" id="XxN-Fz-nc0"/>
+                            <constraint firstItem="Nud-Xd-gfe" firstAttribute="height" secondItem="TMB-dF-Fnf" secondAttribute="height" id="YXR-q4-RTs"/>
+                            <constraint firstItem="TMB-dF-Fnf" firstAttribute="leading" secondItem="NvY-qk-cLd" secondAttribute="leading" id="bik-8z-ifZ"/>
+                            <constraint firstItem="Nud-Xd-gfe" firstAttribute="width" secondItem="TMB-dF-Fnf" secondAttribute="width" id="fdO-36-Ug6"/>
+                            <constraint firstItem="Gsu-Od-vUJ" firstAttribute="centerX" secondItem="Nud-Xd-gfe" secondAttribute="centerX" id="gaO-z9-WE7"/>
+                            <constraint firstItem="ZcD-Dz-98f" firstAttribute="centerX" secondItem="TMB-dF-Fnf" secondAttribute="centerX" id="l4F-bY-Ma5"/>
+                            <constraint firstItem="Nud-Xd-gfe" firstAttribute="leading" secondItem="TMB-dF-Fnf" secondAttribute="trailing" id="l76-0Y-8G9"/>
+                            <constraint firstItem="hqT-iD-FDP" firstAttribute="centerX" secondItem="NvY-qk-cLd" secondAttribute="centerX" id="qjl-j5-Ye8"/>
+                            <constraint firstItem="Q3C-Q6-zzc" firstAttribute="centerX" secondItem="NvY-qk-cLd" secondAttribute="centerX" id="yrQ-P9-ZjW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="NvY-qk-cLd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="d74-s3-cTo"/>
+                    <constraint firstAttribute="trailing" secondItem="NvY-qk-cLd" secondAttribute="trailing" id="fD5-Eu-fuj"/>
+                    <constraint firstItem="NvY-qk-cLd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gro-Cy-6ZA"/>
+                    <constraint firstAttribute="bottom" secondItem="NvY-qk-cLd" secondAttribute="bottom" id="s2x-t7-QUT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btnMan" destination="seb-VG-pE0" id="pbj-QJ-SFq"/>
+                <outlet property="btnWoman" destination="3lz-AB-ucp" id="aER-j8-pun"/>
+                <outlet property="lbTitle" destination="Q3C-Q6-zzc" id="m1v-LZ-THX"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="155.35714285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="men" width="51" height="51"/>
+        <image name="women" width="36" height="51"/>
+        <namedColor name="golden">
+            <color red="0.87099999189376831" green="0.7369999885559082" blue="0.3880000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

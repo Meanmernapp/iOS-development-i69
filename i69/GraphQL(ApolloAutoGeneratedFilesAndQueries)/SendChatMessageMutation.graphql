@@ -1,0 +1,15 @@
+mutation SendChatMessageMutation($msg: String!, $roomID: Int!) {
+   sendMessage(messageStr: $msg, roomId: $roomID) {
+     message {
+       roomId {
+         lastModified
+       }
+       userId {
+         username
+       }
+       content
+       timestamp
+       read
+     }
+   }
+ }

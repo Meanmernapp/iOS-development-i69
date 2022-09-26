@@ -1,0 +1,27 @@
+query GetBroadcastMessageList{
+    broadcastMsgs {
+        edges {
+            node {
+                byUserId{
+                    id
+                    fullName
+                    username
+                    avatar {
+                        url
+                        id
+
+                    }
+                    avatarPhotos {
+                        url
+                        id
+
+                    }
+                    avatarIndex
+                }
+
+                content
+                timestamp
+            }
+        }
+    }
+}

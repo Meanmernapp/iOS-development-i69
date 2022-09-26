@@ -1,0 +1,7 @@
+mutation updateUserOnlineStatus($id : String!,$isOnline : Boolean!)
+    {
+        updateProfile(id : $id,isOnline : $isOnline)
+        {
+            id
+        }
+    }

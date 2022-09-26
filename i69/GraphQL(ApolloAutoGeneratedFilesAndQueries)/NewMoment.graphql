@@ -1,0 +1,12 @@
+mutation NewMoment($file: Upload!, $detail: String!, $userField: String!) {
+   insertMoment(Title: "Latest Moment", file: $file, momentDescription: $detail, user:
+ $userField) {
+     moment {
+       user {
+         username
+       }
+       file
+       id
+     }
+   }
+ }
